@@ -499,3 +499,5 @@ def lambda_handler(event, context={}):
             sns_boto.publish(TopicArn=sns_arn, Message=backup_mgr.message, Subject='Finished AWS RDS snapshotting')
 
     return json.dumps(result, indent=2)
+
+
